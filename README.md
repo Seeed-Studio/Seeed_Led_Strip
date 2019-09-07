@@ -1,3 +1,8 @@
+
+This library has been deprecated! We are leaving this up for historical and research purposes but archiving the repository.
+
+We are now only supporting the use of our [Seeed_Learning_Space](https://github.com/Seeed-Studio/Seeed_Learning_Space/tree/master/Seeed_Led_Ring)
+
 # SEEED LED strip
 This library is for SEEED LED strip.
 
