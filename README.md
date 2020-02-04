@@ -1,4 +1,4 @@
-# DEPRECATED LIBRARY
+# DEPRECATED LIBRARY  [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Led_Strip.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Led_Strip)
 
 This library has been deprecated! We are leaving this up for historical and research purposes but archiving the repository.
 
