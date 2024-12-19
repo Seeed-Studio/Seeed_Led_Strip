@@ -12,9 +12,16 @@
 static uint32_t _getCycleCount(void) __attribute__((always_inline));
 static inline uint32_t _getCycleCount(void) {
   uint32_t ccount;
+#if defined(ESP8266) || defined(CONFIG_IDF_TARGET_ESP32S3)
   __asm__ __volatile__("rsr %0,ccount":"=a" (ccount));
+#elif defined(ESP32)
+  __asm__ __volatile__("csrr %0, mcycle" : "=r" (ccount));
+#else
+  __asm__ __volatile__("rsr %0,ccount":"=a" (ccount));
+#endif
   return ccount;
 }
+
 
 #ifdef ESP8266
 void ICACHE_RAM_ATTR espShow(
